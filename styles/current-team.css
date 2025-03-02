@@ -1,0 +1,123 @@
+
+/* team section styles */
+#current-team{
+    margin: -60px auto;
+}
+#current-team blockquote{
+    float: left;
+    font: 700 65px Oswald;
+    line-height: 1;
+}
+.team-wrapper{
+    background: #fff;
+    padding: 60px 0 120px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.team-top{
+    margin: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.total-people{
+    color: rgba(3, 0, 0, 0.2);
+    float: right;
+    margin-right: -63px;
+    margin-top: 12px;
+    text-transform: uppercase;
+    width: 180px;
+}
+.total-people p{
+    font: 700 14px Oswald;
+    display: inline-block;
+}
+.section{
+    display: block;
+}
+.number-main{
+    color: #ec712b;
+    font: 700 18px Domine;
+}
+.number{
+    color: #461986 ;
+    font: 700 18px Domine;
+}
+@media (min-width: 820px) {
+    .total-people {
+        margin-right: -27px;
+    }
+}
+.team-bottom{
+    display: flex;
+    flex-direction: row;
+}
+
+.team-member img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-bottom {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member .image-container {
+     position: relative;
+}
+
+.team-member .image-container img {
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform-origin: bottom;
+}
+
+.team-member:hover .image-container img {
+    transform: scale(1.2);
+    border-radius: 16px;
+}
+
+.team-member .image-container .circle {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #efefef;
+    inset: 0;
+    z-index: -1;
+    transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform-origin: bottom;
+}
+
+.team-member:hover .image-container .circle {
+    background: #ec712b; /*#ec712b  #fb9477*/
+    transform: scale(1.05);
+}
+
+.team-member:nth-child(even):hover .image-container .circle {
+    background: #461986 ; /*#461986  #9a93f5*/
+}
+
+.team-member .details {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.team-member .name {
+    font: 600 18px Outfit;
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.team-member .role{
+    font: 400 14px Outfit;
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.team-member:hover .name,
+.team-member:hover .role {
+    transform: scale(1.2);
+}

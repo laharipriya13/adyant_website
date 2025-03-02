@@ -1,0 +1,184 @@
+.events {
+  margin: 0;
+  padding: 0;
+}
+
+.title-container {
+  text-align: center; /* Center-align for better responsiveness */
+  margin: 10px auto;
+}
+
+.title {
+  font: 400 5vw Jaro; /* Scale font size with viewport width */
+  color: #333;
+}
+
+.title-container::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 6px;
+  margin: 20px auto;
+  background: #ec712b;
+  animation: drawLine 2s forwards ease-in-out;
+  position: relative;
+}
+
+/* Line Animation */
+@keyframes drawLine {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%; /* Scale width based on container */
+  }
+}
+.events-whole-container {
+  margin: 5vw; /* Use relative units */
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vw;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: center;
+  column-gap: 2vw;
+  row-gap: 2vw; /* Add spacing between rows */
+}
+
+.event-card {
+  width: 90%; /* Scale for smaller screens */
+  max-width: 300px; /* Cap max width */
+  padding: 20px;
+  border-radius: 6mm;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.event-card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sub {
+  font: 700 16px Domine; /* Adjust font size for smaller screens */
+}
+
+.content {
+  font: 700 2vw Domine;
+  line-height: 1.5em;
+}
+
+.individual-event {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.individual-event.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.event-container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap content */
+  gap: 20px;
+}
+
+.event-about {
+  width: 100%;
+  max-width: 600px; /* Ensure text doesn't become too wide */
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 30px;
+}
+
+.event-title {
+  font: 700 4vw Domine;
+  color: #461986;
+}
+
+.event-description {
+  font: 400 1rem Outfit;
+  margin: 20px 0;
+}
+
+.event-images-wrapper {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.event-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.event-images img {
+  width: 100%;
+  max-width: 100%; /* Adjust images to container */
+  height: auto;
+  object-fit: cover;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .title-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title {
+    font-size: 8vw; /* Larger font for smaller screens */
+  }
+
+  .cards-container {
+    flex-direction: column; /* Stack cards */
+    align-items: center; /* Center cards */
+  }
+
+  .event-container {
+    flex-direction: column; /* Stack content */
+  }
+
+  .event-about {
+    width: 100%;
+  }
+
+  .event-title {
+    font-size: 6vw;
+  }
+
+  .event-images-wrapper {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 10vw; /* Bigger text for very small screens */
+  }
+
+  .event-card {
+    padding: 10px;
+    max-width: 90%; /* Scale card width */
+  }
+  .content {
+    font-size: 4vw;
+  }
+
+  .event-title {
+    font-size: 8vw;
+  }
+
+  .event-description {
+    font-size: 0.9rem;
+  }
+}

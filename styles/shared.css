@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    pointer-events: auto; 
+}
+p{
+    font: 400 18px Outfit;
+    line-height: 1.2;
+}
+/* Cursor Styling */
+#custom-cursor {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background: #ec722b;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 90000 !important;
+  transform: translate(-50%, -50%);
+  border: 2px solid transparent;
+  transition: background 0.3s, border-color 0.3s;
+  display: flex; /* Use flexbox for centering */
+  align-items: center;
+  justify-content: center;
+  color: #461986; /* Text color */
+  font: 400 14px Domine;/* Make the text bold */
+  text-align: center;
+}
+.heading{
+    color: #461986;
+    font: 900 40px Jaro;
+    /* padding: 50px 0 0; */
+    text-align: center;
+}
+blockquote{
+    color: #494141;
+    font: 700 50px Oswald;
+    letter-spacing: -.25px;
+    position: relative;
+    max-width: 900px;
+    text-transform: uppercase;
+    line-height: 1;
+    width: 100%;
+    height: fit-content;
+}
+blockquote cite{
+    display: block;
+    font: 400 19px Domine;
+    margin: 10px 0 0;
+    text-transform: none;
+}
+blockquote .before{
+    background-image: url(../utils/quote-left.svg);
+    margin: 2px 0 0 -25px;
+}
+blockquote .after{
+    background-image: url(../utils/quote-right.svg);
+    margin: 20px 0 0 -7px;
+    margin-left: 1px;
+}
+blockquote .after, .before{
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 24px;
+    position: absolute;
+    width: 24px;
+}
+
+
+.button {
+  background-color: #ec712b;
+  color: #f6f6f6;
+  height: 40px;
+  padding: 0 20px; /* Adds padding for left and right space */
+  border: none;
+  font: 400 0.9rem Outfit;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: auto; /* Let the width adjust based on content */
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #ec712b;
+  border: 1px solid #ec712b;
+}
+#mrec-heading {
+    font: 700 63px Oswald;
+    color: #461986;
+    text-align: center;
+}
+
+#cse-heading {
+font: 400 43px Domine;
+color: #ec712b;
+font-style: normal;
+text-align: center;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .blur-div {
+      height: 300px;
+      width: 300px;
+    }
+    #about-info-heading {
+      font-size: 2rem;
+    }
+  
+    .about-button {
+      height: 35px;
+      width: 100px;
+      font-size: 0.8rem;
+    }
+  
+    .about-info p {
+      font-size: 0.9rem;
+    }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #ffffff;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .toggle-btn {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .blur-div {
+      height: 50px;
+      width: 50px;
+      background-color: #ec722b63;
+      filter: blur(100px);
+      position: absolute;
+      /* top: -400px;
+      left: 30%; */
+      z-index: -1;
+    }
+    .nav-logo {
+      height: 60px;
+      width: 60px;
+      margin-left: 20px;
+    }
+    #mrec-heading {
+      font-size: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    #cse-heading {
+      font-size: 30px;
+    }
+  }
+
+
+
+
+

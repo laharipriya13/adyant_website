@@ -1,0 +1,134 @@
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 1.5rem;
+    z-index: 1000;
+    width: 100%;
+}
+.navbar a {
+    color: #ec6022;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font: 700 18px Outfit;
+    transition: color 0.3s;
+}
+.navbar a:hover {
+    color: #461986;
+}
+
+
+
+
+/* Nav links */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-items {
+    font-size: 30px;
+}
+/* Nav Logo */
+.nav-logo {
+    height: 90px;
+    width: 90px;
+    margin-left: 0px;
+}
+
+/* Toggle button for mobile */
+.toggle-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-btn span {
+    height: 3px;
+    width: 25px;
+    background: #ec712b;
+    margin: 4px;
+    transition: 0.3s;
+}
+.toggle-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toggle-menu li {
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.toggle-menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.toggle-menu li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .blur-div {
+      height: 300px;
+      width: 300px;
+    }
+    #about-info-heading {
+      font-size: 2rem;
+    }
+  
+    .about-button {
+      height: 35px;
+      width: 100px;
+      font-size: 0.8rem;
+    }
+  
+    .about-info p {
+      font-size: 0.9rem;
+    }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #ffffff;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .toggle-btn {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .blur-div {
+      height: 50px;
+      width: 50px;
+      background-color: #ec722b63;
+      filter: blur(100px);
+      position: absolute;
+      /* top: -400px;
+      left: 30%; */
+      z-index: -1;
+    }
+    .nav-logo {
+      height: 60px;
+      width: 60px;
+      margin-left: 20px;
+    }
+    #mrec-heading {
+      font-size: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    #cse-heading {
+      font-size: 30px;
+    }
+  }
