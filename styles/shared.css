@@ -91,16 +91,16 @@ blockquote .after, .before{
   border: 1px solid #ec712b;
 }
 #mrec-heading {
-    font: 700 63px Oswald;
+    font: 700 50px Oswald;
     color: #461986;
     text-align: center;
 }
 
 #cse-heading {
-font: 400 43px Domine;
-color: #ec712b;
-font-style: normal;
-text-align: center;
+  font: 400 30px Outfit;
+  color: #ec712b;
+  font-style: normal;
+  text-align: center;
 }
 
 /* Responsive styling */
