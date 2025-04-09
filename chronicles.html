@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSE Chronicles</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/shared.css" />
+    <link rel="stylesheet" href="./styles/events-page.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/chronicles.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Jaro:opsz@6..72&family=Outfit:wght@100..900&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        pointer-events: auto;
+        font-family: "Outfit", sans-serif;
+        background-color: #f9f9f9;
+        color: #222;
+      }
+
+      .chronicle-heading {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #f9f9f9;
+        padding: 20px 0;
+        color: #461986;
+        font-family: "Jaro", sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        letter-spacing: 1px;
+        text-align: center;
+        border-bottom: none;
+        box-shadow: none;
+      }
+
+      .carousel-wrapper {
+        display: flex;
+        min-height: calc(100vh - 80px);
+        overflow: hidden;
+        padding-top: 40px;
+      }
+
+      .left-text,
+      .image-area {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        box-sizing: border-box;
+      }
+
+      .left-text {
+        background-color: #22222202;
+        color: #222;
+      }
+
+      .text-box {
+        max-width: 500px;
+      }
+
+      .carousel-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .carousel-desc {
+        font-size: 1rem;
+        color: #666;
+      }
+
+      .image-area {
+        background-color: #fff;
+        overflow: hidden;
+      }
+
+      .image-track {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .slide {
+        flex: 0 0 420px;
+        margin-right: 20px;
+        text-align: center;
+      }
+
+      .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        max-height: 400px;
+      }
+
+      .title-container {
+        margin-top: 10px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .carousel-wrapper {
+          flex-direction: column;
+          padding-top: 20px;
+        }
+
+        .left-text,
+        .image-area {
+          width: 100%;
+        }
+
+        .image-track {
+          overflow-x: scroll;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="index.html">
+        <img
+          src="./utils/adyant-logo-trans.png"
+          alt="Adyant Logo"
+          class="nav-logo"
+        />
+      </a>
+      <ul class="nav-links">
+        <li><a class="nav-items" href="index.html">Home</a></li>
+        <li><a class="nav-items" href="#contact-us">Contact Us</a></li>
+      </ul>
+      <div class="toggle-btn" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- Page Title -->
+    <div class="title-container">
+      <div class="chronicle-heading">CSE CHRONICLES</div>
+    </div>
+
+    <!-- Carousel Sections -->
+    <!-- Section 1 -->
+    <div class="carousel-wrapper carousel-section">
+      <div class="left-text">
+        <div class="text-box">
+          <h1 class="carousel-title">Visesh 2K24 Winners</h1>
+          <p class="carousel-desc">
+            Celebrating the brilliant minds who showcased innovation,
+            creativity, and problem-solving excellence at our annual hackathon —
+            Visesh 2K24.
+          </p>
+        </div>
+      </div>
+      <div class="image-area">
+        <div class="image-track">
+          <div
+            class="slide"
+            data-title="Visesh 2K24 Winners"
+            data-text="Celebrating the brilliant minds who showcased innovation, creativity, and problem-solving excellence at our annual hackathon — Visesh 2K24."
+          >
+            <img
+              src="./utils/chronicles imgs/Benefits_of_a_hackathon.png"
+              alt="Hackathon"
+            />
+          </div>
+          <div
+            class="slide"
+            data-title="Visesh 2K24 Winners"
+            data-text="Celebrating the brilliant minds who showcased innovation, creativity, and problem-solving excellence at our annual hackathon — Visesh 2K24."
+          >
+            <img src="./utils/chronicles imgs/footer.jpg" alt="Workshop" />
+          </div>
+          <div
+            class="slide"
+            data-title="Visesh 2K24 Winners"
+            data-text="Celebrating the brilliant minds who showcased innovation, creativity, and problem-solving excellence at our annual hackathon — Visesh 2K24."
+          >
+            <img src="./utils/chronicles imgs/image5-min-1.png" alt="Faculty" />
+          </div>
+          <div
+            class="slide"
+            data-title="Visesh 2K24 Winners"
+            data-text="Celebrating the brilliant minds who showcased innovation, creativity, and problem-solving excellence at our annual hackathon — Visesh 2K24."
+          >
+            <img
+              src="./utils/chronicles imgs/Microsoft-Hackathon.jpg"
+              alt="Tips"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="carousel-wrapper carousel-section">
+      <div class="left-text">
+        <div class="text-box">
+          <h1 class="carousel-title">Tech Talks & Workshops</h1>
+          <p class="carousel-desc">
+            Insights into emerging trends from industry leaders.
+          </p>
+        </div>
+      </div>
+      <div class="image-area">
+        <div class="image-track">
+          <div
+            class="slide"
+            data-title="Tech Talks & Workshops"
+            data-text="Insights into emerging trends from industry leaders."
+          >
+            <img
+              src="./utils/chronicles imgs/Benefits_of_a_hackathon.png"
+              alt="AI Project"
+            />
+          </div>
+          <div
+            class="slide"
+            data-title="Tech Talks & Workshops"
+            data-text="Insights into emerging trends from industry leaders."
+          >
+            <img src="./utils/chronicles imgs/footer.jpg" alt="Farming" />
+          </div>
+          <div
+            class="slide"
+            data-title="Tech Talks & Workshops"
+            data-text="Insights into emerging trends from industry leaders."
+          >
+            <img
+              src="./utils/chronicles imgs/image5-min-1.png"
+              alt="Voice Project"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="carousel-wrapper carousel-section">
+      <div class="left-text">
+        <div class="text-box">
+          <h1 class="carousel-title">Event Highlights</h1>
+          <p class="carousel-desc">
+            Best moments from cultural and technical events organized by the CSE
+            department.
+          </p>
+        </div>
+      </div>
+      <div class="image-area">
+        <div class="image-track">
+          <div
+            class="slide"
+            data-title="Eminence 2024"
+            data-text="A fun-filled fest with games, doodle art, and Flutter workshop."
+          >
+            <img
+              src="./utils/chronicles imgs/Benefits_of_a_hackathon.png"
+              alt="Eminence"
+            />
+          </div>
+          <div
+            class="slide"
+            data-title="Microsoft Visit"
+            data-text="Students experiencing real-world tech at Microsoft Hyderabad."
+          >
+            <img src="./utils/chronicles imgs/footer.jpg" alt="Microsoft" />
+          </div>
+          <div
+            class="slide"
+            data-title="Tech Talk Series"
+            data-text="Engaging sessions with industry experts and alumni."
+          >
+            <img
+              src="./utils/chronicles imgs/image5-min-1.png"
+              alt="Tech Talk"
+            />
+          </div>
+          <div
+            class="slide"
+            data-title="Microsoft Visit"
+            data-text="Students experiencing real-world tech at Microsoft Hyderabad."
+          >
+            <img src="./utils/chronicles imgs/footer.jpg" alt="Microsoft" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Auto Scroll Script -->
+    <script>
+      const sections = document.querySelectorAll(".carousel-section");
+
+      sections.forEach((section) => {
+        const track = section.querySelector(".image-track");
+        const slides = section.querySelectorAll(".slide");
+        const title = section.querySelector(".carousel-title");
+        const desc = section.querySelector(".carousel-desc");
+        const slideWidth = slides[0].offsetWidth + 20;
+
+        let index = 0;
+
+        const updateText = (i) => {
+          const slide = slides[i];
+          if (slide) {
+            title.innerText = slide.dataset.title;
+            desc.innerText = slide.dataset.text;
+          }
+        };
+
+        setInterval(() => {
+          index = (index + 1) % slides.length;
+          track.style.transform = `translateX(-${index * slideWidth}px)`;
+          updateText(index);
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>

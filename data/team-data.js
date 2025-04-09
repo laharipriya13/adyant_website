@@ -6,7 +6,7 @@ export const teamDetails = [
     }, {
         "name": "M Raj Kumar",
         "role": "Vice President",
-        "image": "../utils/team-members/raj-kumar-2024-rb.png"
+        "image": "../utils/team-members/sarupya-2024-rb.png"
     }, {
         "name": "Shiva Priya P",
         "role": "Secretary",

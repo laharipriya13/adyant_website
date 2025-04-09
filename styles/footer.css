@@ -1,0 +1,171 @@
+.footer-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    padding: 40px;
+    position: relative; /* Make container relative */
+    overflow: hidden; /* Hide any overflowing lines */
+}
+
+.contact-heading{
+    font-size: 30px;
+    color: #4819858f;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Mail Section */
+.mail-section {
+    margin-bottom: 100px;
+}
+
+.email {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #471985;
+}
+
+/* Contact and Socials Wrapper */
+.contact-socials-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Contact Section */
+.contact-section {
+    flex: 3;
+    font-size: 20px;
+}
+
+.contact-list {
+    display: flex;
+    gap: 25px;
+}
+
+.contact-item {
+    text-align: left;
+    width: 200px;
+}
+.contact-name{
+    color: #d25811;
+}
+
+.contact-item p {
+    margin: 5px 0;
+}
+
+/* Socials Section */
+.socials-section {
+    flex: 1;
+    font-size: 20px;
+    text-align: left; /* Aligns with contact section */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.socials-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials-list li {
+    margin-bottom: 10px;
+}
+
+.socials-list a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Socials Section */
+.socials-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* Icons in a row */
+    gap: 15px;
+    align-items: center;
+}
+
+/* Social Icons */
+.custom-icon {
+    font-size: 30px;
+    color: #ec712b;
+    transition: color 0.3s ease-in-out;
+}
+
+.custom-icon:hover {
+    color: #b5501e; /* Slightly darker shade on hover */
+}
+
+
+
+
+/* Responsive for tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .contact-socials-wrapper {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .socials-section {
+      text-align: left;
+      align-items: flex-start;
+      margin-right: 0;
+    }
+  
+    .social-links {
+      justify-content: flex-start;
+    }
+  
+    .contact-list {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+  
+  /* Responsive for mobile devices (max-width: 600px) */
+  @media (max-width: 600px) {
+    .footer-container {
+      padding: 20px;
+    }
+  
+    .contact-heading {
+      font-size: 24px;
+    }
+  
+    .email {
+      font-size: 24px;
+      word-break: break-all;
+    }
+  
+    .contact-section,
+    .socials-section {
+      font-size: 16px;
+    }
+  
+    .contact-item {
+      width: 100%;
+    }
+  
+    .custom-icon {
+      font-size: 24px;
+    }
+  
+    .social-links {
+      flex-direction: row;
+      gap: 10px;
+    }
+  }
+  

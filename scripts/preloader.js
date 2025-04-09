@@ -37,5 +37,5 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         const preloader = document.querySelector('.overlay');
         preloader.style.display = 'none'; // Hide preloader after a slight delay
-    }, 6000); // Adjust the delay (in ms) as needed
+    }, 2000); // Adjust the delay (in ms) as needed
 });
